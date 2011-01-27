@@ -15,7 +15,7 @@ class Tagger:
         self._adjective_type = ["JJ","JJR","JJS"] 
         self._adverb_type = ["RB","RBR","RBS"]
         self.debug=debug
-    def classify(self, filename="taggerText"):
+    def classify(self, filename):
         taggerText=text.ReadText(filename)
         tokens = nltk.tokenize.word_tokenize(taggerText.readAll)
         tags= nltk.tag.pos_tag(tokens)
@@ -50,6 +50,3 @@ class Tagger:
             print len(self.adverbs)
             print self.verbs
             print len(self.verbs)
-
-tagger=Tagger(True)
-tagger.classify()
