@@ -1,7 +1,7 @@
 # To change this template, choose Tools | Templates
 # and open the template in the editor.
 
-__author__="aditya"
+__author__="aditya & rahul"
 __date__ ="$26 Jan, 2011 4:13:20 PM$"
 
 from nltk.corpus import wordent as wn
