@@ -4,7 +4,7 @@
 __author__="aditya & rahul"
 __date__ ="$26 Jan, 2011 4:13:20 PM$"
 
-from nltk.corpus import wordent as wn
+from nltk.corpus import wordnet as wn
 def createSynsetDict(wordList):
     """Creates a dictionary of synonyms of given wordlist"""
     synWords={}
