@@ -4,17 +4,28 @@
 __author__="aditya"
 __date__ ="$27 Jan, 2011 11:09:18 PM$"
 
-import nltk
+#import nltk
 import tagger
-import generasation
+import generalisation
 
 class DocProcessor:
 
     def __init__(self):
-       self.taggerinst = tagger.Tagger(false)
+       self.taggerinst = tagger.Tagger(False)
 
     def process(self, filename = "taggerText"):
-        self.taggerinst.classify(filename)
+        wordlist = self.taggerinst.classify(filename)
+        output = open('output','w')
+        output.write(str(wordlist) + '\n')
+        i = 0
+        generalizedWordList = []
+        while i < 3:
+            generalizedWordList.extend(generalisation.generalisation(wordlist[i]))
+            i = i+1
+        #print wordlist
+        output.write(str(generalizedWordList))
+        output.close()
 
 doc_processor = DocProcessor()
 doc_processor.process()
+print "Finished"
