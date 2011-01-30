@@ -17,26 +17,30 @@ def generalisation(originalWordList):
     currentWordList = originalWordList
     synWords = createSynsetDict(originalWordList)
     while(len(currentWordList)>2):
-        generalizedWords = []
-        currShortest_Dist = 2
+        generalizedWords = [[],[],[]]
+        #currShortest_Dist = 2
         currentWord = currentWordList.pop()
         for otherWord in currentWordList:
             for currentWordSyn in synWords[currentWord]:
                 for ithWordSyn in synWords[otherWord]:
                     short_dist = ithWordSyn.shortest_path_distance(currentWordSyn)
-                    if (short_dist != None and short_dist < currShortest_Dist):
-                        currShortest_Dist = short_dist
-                        generalizedWords = []
-                        generalizedWords.extend(ithWordSyn.common_hypernyms(currentWordSyn))
-                    if (short_dist != None and short_dist == currShortest_Dist):
-                        generalizedWords.extend(ithWordSyn.common_hypernyms(currentWordSyn))
-
-            generalisedWordList.extend([currentWord,otherWord])
-            if(len(generalizedWords)!=0):
-                currentWordList.remove(otherWord)
-                l=[]
-                for syns in generalizedWords:
-                    l.extend(syns.lemma_names)
-                generalisedWordList.extend(l)
+                    #print short_dist
+                    if (short_dist != None and short_dist <= 2):
+                        generalizedWords[short_dist] = generalizedWords[short_dist] + ithWordSyn.common_hypernyms(currentWordSyn)
+        generalisedWordList.extend([currentWord])
+        l=[]
+        if(len(generalizedWords[0])!= 0):
+            currentWordList.remove(otherWord)
+            for syns in generalizedWords[0]:
+                l.extend(syns.lemma_names)
+        elif (len(generalizedWords[1])!= 0):
+            currentWordList.remove(otherWord)
+            for syns in generalizedWords[1]:
+                l.extend(syns.lemma_names)
+        elif (len(generalizedWords[2])!= 0):
+            currentWordList.remove(otherWord)
+            for syns in generalizedWords[2]:
+                l.extend(syns.lemma_names)
+        generalisedWordList.extend(l)
     generalisedWordList=list(set(generalisedWordList))
     return generalisedWordList

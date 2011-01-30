@@ -21,6 +21,7 @@ class DocProcessor:
         generalizedWordList = []
         while i < 3:
             generalizedWordList.extend(generalisation.generalisation(wordlist[i]))
+            print len(generalizedWordList)
             i = i+1
         #print wordlist
         output.write(str(generalizedWordList))
