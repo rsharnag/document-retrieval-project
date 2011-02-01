@@ -1,18 +1,6 @@
 #!/usr/bin/python
 # encoding: utf-8
 
-""" KDTree implementation.
-
-Features:
-
-- nearest neighbours search
-
-Matej Drame [matej.drame@gmail.com]
-"""
-
-__version__ = "1r11.1.2010"
-__all__ = ["KDTree"]
-
 def square_distance(pointA, pointB):
     # squared euclidean distance
     distance = 0
