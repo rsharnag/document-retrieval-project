@@ -33,7 +33,7 @@ class LSI:
                         str=f.read()
                         str=str.lower()
                         str=self.remove_puncs(str)
-                        words=str.split(" ")
+                        words=str.split()
                         i=0
                         for qw in query_words:        
                                 self.hash_table.setdefault(query_words[i], []).append(os.path.basename(infile))

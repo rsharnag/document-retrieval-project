@@ -16,7 +16,16 @@ class Tagger:
         self._adverb_type = ["RB","RBR","RBS"]
         self.debug=debug
 
-    def classify(self, filename):
+    # removes all punctions from text
+    def remove_puncs(self,string):
+            stripped_text=""
+            for c in string:
+                    if c in '!,.()[]{}\n':
+                            c=""
+                    stripped_text+=c
+            return stripped_text
+
+    def classify(self, filename, set_ops=True):
         wordlist = [] #return var having a list of tokens tagged as <noun><adjective><verb><adverb>
         taggerText=text.ReadText(filename)
         tokens = nltk.tokenize.word_tokenize(taggerText.readAll)
@@ -28,24 +37,29 @@ class Tagger:
         #print tags
         for tag in tags:
             if tag[1] in self._noun_type:
+                tag[0] = remove_puncs(tag[0])
                 self.nouns.append(tag[0])
             elif tag[1] in self._adjective_type:
+                tag[0] = remove_puncs(tag[0])
                 self.adjectives.append(tag[0])
             elif tag[1] in self._verb_type:
+                tag[0] = remove_puncs(tag[0])
                 self.verbs.append(tag[0])
             elif tag[1] in self._adverb_type:
+                tag[0] = remove_puncs(tag[0])
                 self.adverbs.append(tag[0])
 
         #Remove multiple entries
-        if(self.debug):stime=time.time()
-        self.nouns=list(set(self.nouns))
-        wordlist.append(self.nouns)
-        self.adjectives=list(set(self.adjectives))
-        wordlist.append(self.adjectives)
-        self.verbs=list(set(self.verbs))
-        wordlist.append(self.verbs)
-        self.adverbs=list(set(self.adverbs))
-        wordlist.append(self.adverbs)
+        if(set_ops):
+            if(self.debug):stime=time.time()
+            self.nouns=list(set(self.nouns))
+            wordlist.append(self.nouns)
+            self.adjectives=list(set(self.adjectives))
+            wordlist.append(self.adjectives)
+            self.verbs=list(set(self.verbs))
+            wordlist.append(self.verbs)
+            self.adverbs=list(set(self.adverbs))
+            wordlist.append(self.adverbs)
         if self.debug:
             print time.time()-stime
             print len(taggerText.readAll)
