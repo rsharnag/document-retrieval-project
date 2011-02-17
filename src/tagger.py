@@ -37,17 +37,17 @@ class Tagger:
         #print tags
         for tag in tags:
             if tag[1] in self._noun_type:
-                tag[0] = remove_puncs(tag[0])
-                self.nouns.append(tag[0])
+                stripped_tag = self.remove_puncs(tag[0])
+                self.nouns.append(stripped_tag)
             elif tag[1] in self._adjective_type:
-                tag[0] = remove_puncs(tag[0])
-                self.adjectives.append(tag[0])
+                stripped_tag = self.remove_puncs(tag[0])
+                self.adjectives.append(stripped_tag)
             elif tag[1] in self._verb_type:
-                tag[0] = remove_puncs(tag[0])
-                self.verbs.append(tag[0])
+                stripped_tag = self.remove_puncs(tag[0])
+                self.verbs.append(stripped_tag)
             elif tag[1] in self._adverb_type:
-                tag[0] = remove_puncs(tag[0])
-                self.adverbs.append(tag[0])
+                stripped_tag = self.remove_puncs(tag[0])
+                self.adverbs.append(stripped_tag)
 
         #Remove multiple entries
         if(set_ops):

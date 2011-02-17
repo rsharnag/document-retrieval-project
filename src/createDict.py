@@ -73,6 +73,7 @@ pickle.dump(docs,f)
 
 f=open('output_nouns','w')
 pickle.dump(lsi.hash_search(path,query_nouns),f)
+f.close()
 
 f=open('output_verbs','w')
 pickle.dump(lsi.hash_search(path,query_verbs),f)
