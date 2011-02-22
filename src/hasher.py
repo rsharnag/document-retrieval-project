@@ -14,41 +14,43 @@ import os
 import glob
 
 class Hasher:
-    """
-        Hasher class to create hash table ,dumping it to file on disk ,append file to hash table
-    """
+    """Hasher class to create hash table ,dumping it to file on disk ,append file to hash table"""
     def __init__(self):
-            self.word_count={}
-            self.hash_table={}
-            self.map_file={}
-            self.map_count={}
+        #word_count maps file name to total number of words in that file
+        self.word_count={}
+        #hash_table maps word to list containing file index, count in file as a particular part of speech, and part of speech
+        self.hash_table={}
+        #map_file maps file name to file index(number)
+        self.map_file={}
+        #map_count maps file index(number) to file name
+        self.map_count={}
 
-     # removes all punctions from text
     def remove_puncs(self,string):
-            stripped_text=""
-            for c in string:
-                    if c in '!,.()[]{}\n':
-                            c=""
-                    stripped_text+=c
-            return stripped_text
+        """removes all punctuations from text"""
+        stripped_text=""
+        for c in string:
+            if c in '!,.()[]{}\n':
+                c=""
+            stripped_text+=c
+        return stripped_text
 
     def create_dump(self):
         count_file=0
-        if(sys.platform=="nt"):
+        if(sys.platform=="win32"):
             path=os.curdir+"\\text\\"
         else:
             path=os.curdir+"/text/"
         for infile in glob.glob(os.path.join(path,"*.txt")):
             count = len(open(infile).read().split())
-            self.word_count[infile] = count
+            self.word_count[infile]=count
             self.map_count[count_file]=infile
             self.map_file[infile]=count_file
             count_file=count_file+1
             self.hash_words(infile)
         self.write_dump()
-    def write_dump(self):
 
-        if(sys.platform=="nt"):
+    def write_dump(self):
+        if(sys.platform=="win32"):
             path=os.curdir+"\\dumps\\"
         else:
             path=os.curdir+"/dumps/"
@@ -71,12 +73,12 @@ class Hasher:
         f2.close()
         f3.close()
         f4.close()
+
     def read_dump(self):
-        if(sys.platform=="nt"):
+        if(sys.platform=="win32"):
             path=os.curdir+"\\dumps\\"
         else:
             path=os.curdir+"/dumps/"
-        
         try:
             f1=open(path+'hash_dump','r')
             f2=open(path+'word_count_dump','r')
@@ -93,6 +95,7 @@ class Hasher:
         f3.close()
         self.map_count = pickle.load(f4)
         f4.close()
+
     def append_dump(self,filename):
         self.read_dump()
         if(len(self.map_count.keys())==0):
@@ -104,7 +107,6 @@ class Hasher:
         self.hash_words(filename)
         self.write_dump()
 
-
     def hash_words(self,path):
         t=tagger.Tagger()
         t.classify(path,False)
@@ -113,7 +115,6 @@ class Hasher:
                 self.hash_table[word.lower()].extend([(self.map_file[path],t.nouns.count(word),0)])
             else:
                 self.hash_table[word.lower()]=[(self.map_file[path],t.nouns.count(word),0)]
-
         for word in list(set(t.verbs)):
             if(self.hash_table.has_key(word.lower())):
                 self.hash_table[word.lower()].extend([(self.map_file[path],t.verbs.count(word),1)])
@@ -129,10 +130,3 @@ class Hasher:
                 self.hash_table[word.lower()].extend([(self.map_file[path],t.adverbs.count(word),3)])
             else:
                 self.hash_table[word.lower()]=[(self.map_file[path],t.adverbs.count(word),3)]
-
-if __name__=="__main__":
-    hash= Hasher()
-    hash.create_dump()
-    #print hash.hash_table
-    #pass
-
