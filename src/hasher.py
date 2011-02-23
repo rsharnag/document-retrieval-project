@@ -130,3 +130,8 @@ class Hasher:
                 self.hash_table[word.lower()].extend([(self.map_file[path],t.adverbs.count(word),3)])
             else:
                 self.hash_table[word.lower()]=[(self.map_file[path],t.adverbs.count(word),3)]
+
+if __name__ == "__main__":
+    hash = Hasher()
+    hash.create_dump()
+    #print hash.hash_table
