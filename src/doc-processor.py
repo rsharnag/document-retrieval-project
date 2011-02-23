@@ -7,25 +7,25 @@ __date__ ="$27 Jan, 2011 11:09:18 PM$"
 #import nltk
 import tagger
 import generalisation
-
+import svd_decomposer
 class DocProcessor:
 
-    def __init__(self):
+    def __init__(self,hash):
        self.taggerinst = tagger.Tagger(False)
-
+       self.generalizedWordList=[]
+       self.decomposer=svdDecompose()
+       self.hash=hash
     def process(self, filename = "taggerText"):
         wordlist = self.taggerinst.classify(filename)
-        output = open('output','w')
-        output.write(str(wordlist) + '\n')
-        i = 0
-        generalizedWordList = []
-        while i < 3:
-            generalizedWordList.extend(generalisation.generalisation(wordlist[i]))
-            print len(generalizedWordList)
-            i = i+1
-        #print wordlist
-        output.write(str(generalizedWordList))
-        output.close()
+        type = 0
+        while type <= 3:
+            self.generalizedWordList.extend(generalisation.generalisation(wordlist[type]))
+            type+=1
+        decomposer=svdDecompose(self.hash)
+        decomposer.tfidf(self.generalizedWordList)
+        decomposer.decompose()
+        self.results=decomposer.find_neighbours()
+
 
 doc_processor = DocProcessor()
 doc_processor.process()
