@@ -13,8 +13,8 @@ class DocProcessor:
     def __init__(self,hash):
        self.taggerinst = tagger.Tagger(False)
        self.generalizedWordList=[]
-       self.decomposer=svdDecompose()
        self.hash=hash
+
     def process(self, filename = "taggerText"):
         wordlist = self.taggerinst.classify(filename)
         type = 0

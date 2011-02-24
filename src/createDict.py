@@ -1,6 +1,8 @@
 #__author__="ankit tare"
 #__date__ ="$12 feb, 2011 1:56:11 PM$"
 
+ #Legacy file -- NOT currently in use. Similar functionality implemented in hasher.py which is functional.#
+ 
 import os
 import glob
 import sys
