@@ -2,7 +2,16 @@
 S'./text/computer.txt'
 p2
 I373
-sS'./text/applied computer science.txt'
+sS'./text/biotech.txt'
 p3
+I914
+sS'./text/android.txt'
+p4
+I409
+sS'./text/applied computer science.txt'
+p5
 I518
+sS'./text/biology.txt'
+p6
+I785
 s.
