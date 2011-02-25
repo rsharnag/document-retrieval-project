@@ -5,6 +5,7 @@ __author__="aditya"
 __date__ ="$27 Jan, 2011 11:09:18 PM$"
 
 #import nltk
+
 import tagger
 import generalisation
 import svd_decomposer
@@ -21,12 +22,16 @@ class DocProcessor:
         while type <= 3:
             self.generalizedWordList.extend(generalisation.generalisation(wordlist[type]))
             type+=1
-        decomposer=svdDecompose(self.hash)
+        decomposer=svd_decomposer.svdDecompose(self.hash)
         decomposer.tfidf(self.generalizedWordList)
         decomposer.decompose()
         self.results=decomposer.find_neighbours()
+        print self.results
 
-
-doc_processor = DocProcessor()
-doc_processor.process()
-print "Finished"
+if(__name__=="__main__"):
+    from hasher import Hasher
+    hash=Hasher()
+    hash.read_dump()
+    doc_processor = DocProcessor(hash)
+    doc_processor.process()
+    print "Finished"

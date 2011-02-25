@@ -3,6 +3,15 @@ I0
 S'./text/computer.txt'
 p2
 sI1
-S'./text/applied computer science.txt'
+S'./text/android.txt'
 p3
+sI2
+S'./text/biology.txt'
+p4
+sI3
+S'./text/applied computer science.txt'
+p5
+sI4
+S'./text/biotech.txt'
+p6
 s.
