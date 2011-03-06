@@ -34,4 +34,5 @@ if(__name__=="__main__"):
     hash.read_dump()
     doc_processor = DocProcessor(hash)
     doc_processor.process()
+    open("output_TFIDF","w").write(" ")
     print "Finished"

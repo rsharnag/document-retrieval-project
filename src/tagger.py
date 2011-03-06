@@ -3,6 +3,7 @@ import nltk.tag
 import nltk.tokenize
 import text
 import time
+import inflect
 # To change this template, choose Tools | Templates
 # and open the template in the editor
 __author__="aditya"
@@ -26,6 +27,7 @@ class Tagger:
             return stripped_text
 
     def classify(self, filename, set_ops=True):
+        p = inflect.engine()
         wordlist = [] #return var having a list of tokens tagged as <noun><adjective><verb><adverb>
         taggerText=text.ReadText(filename)
         tokens = nltk.tokenize.word_tokenize(taggerText.readAll)
@@ -38,6 +40,9 @@ class Tagger:
         for tag in tags:
             if tag[1] in self._noun_type:
                 stripped_tag = self.remove_puncs(tag[0])
+                singular = p.singular_noun(stripped_tag)
+                if(singular != False):
+                    stripped_tag = singular
                 self.nouns.append(stripped_tag)
             elif tag[1] in self._adjective_type:
                 stripped_tag = self.remove_puncs(tag[0])
@@ -60,6 +65,7 @@ class Tagger:
             wordlist.append(self.verbs)
             self.adverbs=list(set(self.adverbs))
             wordlist.append(self.adverbs)
+        open("output_TaggedWL","w").write(str(wordlist))
         if self.debug:
             print time.time()-stime
             print len(taggerText.readAll)
@@ -72,3 +78,7 @@ class Tagger:
             print self.verbs
             print len(self.verbs)
         return wordlist
+
+if __name__ == "__main__":
+    t = Tagger()
+    t.classify("taggerText")

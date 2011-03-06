@@ -5,6 +5,8 @@ __author__="jyotesh"
 __date__ ="$21 Feb, 2011 5:17:33 PM$"
 
 import hasher
+import tagger
+import generalisation
 from math import log
 import numpy
 from kdtree import KDTree
@@ -45,14 +47,16 @@ class svdDecompose:
                         freq = (float(word_count) / total_words) * log(float(documents_count) / documents_per_word[tag])
                         freq_list[file_index] = freq
                 if tag_present == 1:
+                    open("output_TFIDF","a").write(str(word)+"\n")
                     self.word_index_per_tag.append([word,tag])
                     self.freq_table.append(freq_list)
+        open("output_TFIDF","a").write(str(self.freq_table))
         """for i in range(0,len(self.word_index_per_tag)):
 		print "word = ",self.word_index_per_tag[i][0],", tag = ",self.word_index_per_tag[i][1],", frequency = ",self.freq_table[i]"""
 
     def decompose(self):
         self.U,self.S,self.V = numpy.linalg.svd(self.freq_table)
-
+        open("output_SVD","w").write(str(self.U) + "\n" + str(self.V))
 
     def find_neighbours(self):
         """Build a k-D Tree and find the nearnest neighbours of the given query"""
@@ -99,9 +103,17 @@ if __name__ == "__main__":
     result = []
     hash_table = hasher.Hasher()
     hash_table.read_dump()
-    freq_count = svdDecompose(hash_table)
-    wordlist=["conceptualize","disciplines","copenhagen","appear","invented","boolean","successful"]
-    freq_count.tfidf(wordlist)
-    freq_count.decompose()
-    result = freq_count.find_neighbours()
-    open("output","w").write( str(freq_count.U)+"\n\n\n"+str(freq_count.V))
+    taggerinst = tagger.Tagger(False)
+    wordlist = taggerinst.classify("taggerText")
+    generalizedWordList = []
+    type = 0
+    while type <= 3:
+        generalizedWordList.extend(generalisation.generalisation(wordlist[type]))
+        type+=1
+    decomposer=svdDecompose(hash_table)
+    decomposer.tfidf(generalizedWordList)
+#    wordlist=["conceptualize","disciplines","copenhagen","appear","invented","boolean","successful"]
+#    freq_count.tfidf(wordlist)
+#    freq_count.decompose()
+#    result = freq_count.find_neighbours()
+#    open("output","w").write( str(freq_count.U)+"\n\n\n"+str(freq_count.V))
