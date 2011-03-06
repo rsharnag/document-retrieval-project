@@ -1,17 +1,17 @@
 (dp1
 S'./text/computer.txt'
 p2
-I0
+I1
 sS'./text/biotech.txt'
 p3
 I4
 sS'./text/android.txt'
 p4
-I1
+I2
 sS'./text/applied computer science.txt'
 p5
-I3
+I0
 sS'./text/biology.txt'
 p6
-I2
+I3
 s.

@@ -1,15 +1,15 @@
 (dp1
 I0
-S'./text/computer.txt'
+S'./text/applied computer science.txt'
 p2
 sI1
-S'./text/android.txt'
+S'./text/computer.txt'
 p3
 sI2
-S'./text/biology.txt'
+S'./text/android.txt'
 p4
 sI3
-S'./text/applied computer science.txt'
+S'./text/biology.txt'
 p5
 sI4
 S'./text/biotech.txt'
