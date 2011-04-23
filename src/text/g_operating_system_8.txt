@@ -1,0 +1,342 @@
+TreePad X Enterprise
+384 Gigabyte Personal Information Manager and Word Processor.
+Intuitive and versatile, including Website Generator, spellchecker, thesaurus, attachments, search engine, recycle bin, and much more! For Windows and Linux/Wine.
+Click here to get the free evaluation version.
+ 
+Contents
+Introduction
+Free Linux Operating Systems
+Virtual Machines / Emulators
+Free BSD Operating Systems
+Free Solaris
+Other Unix Operating Systems
+Free Educational Operating Systems
+More free Operating Systems
+Haiku (BeOS)
+RiscOS
+OS/2
+Commercial Operating Systems
+Java Operating-systems
+Windows
+DOS and DOS clones
+Boot Disks and Portable operating systems
+Open source BIOS
+High Performance Computing
+Operating System Development
+Operating System-related sites
+Related Freebyte pages
+Information wanted!
+About this page
+Freebyte.com
+Graphics
+Office and desktop
+Software and utilities
+Security
+System and computer
+Internet and communication
+Information
+Entertainment
+Technology, science
+Music & art
+Webmaster
+Programming
+Life
+Business and Finance
+
+ 
+Introduction
+This page contains alternatives to Windows, free operating systems, interesting initiatives for new Operating Systems, commercial Operating Systems, Operating Systems-related sites, Virtual Machines (emulators) which can be used to run Operating Systems inside other Operating Systems and more.
+ 
+Free Linux Operating Systems
+Linux is a popular free Unix version, initially for the Intel xx86 set of platforms, but now also for other processors: Alpha, ARM, Motorola 680x0, PowerPC, SPARC.
+In the Webserver area it has become the most popular operating system. Linux desktop operating systems have improved tremendously during the last few years. Linux now is now a true and viable alternative for Windows on the desktop as well.
+A variety of Linux distributions are available: one can download several Linux versions for free, or order CD-versions at a small price.
+VectorLinux	Lightweight Linux editions. The Light version of VectorLinux version will run on a Pentium 166 with 64 Mb ram. The standard edition needs no more than a Pentium 200 and 96 Mb of ram.
+Ubuntu	Excellent Linux distribution with an option of running it directly from CD (without installing it). Ubuntu is easy to configure and easy to install. During install you should enable the options to download/install updates and third party software to ensure that you can play flash, windows media and other formats.
+Ubuntu comes with its own set of programs, such as a full-fledged office suite, a good email program, the Mozilla Firefox Web browser, the Nautilus file manager and much more. It can also access (read/write) Windows NTFS and FAT partitions directly. Additional software such as the VLC media player and wine can be installed later on (automatically through the Internet) using the 'Synaptic Package Manager'.
+Ylmf OS	A Ubuntu-based Linux operating system with a Windows XP user-interface.
+Fedora	Free Linux operating system created by Red Hat. You can run it directly from CD to try it out, before installing it.
+aLinux	Office/multimedia RPM based Linux distribution.
+Cooperative Linux	CoLinux.enables one to run Linux inside Microsoft Windows. It is a port of the Linux kernel that allows it to run cooperatively alongside another operating system on a single machine. For instance, it allows one to freely run Linux inside Windows 2000/XP, without using a commercial PC virtualization software such as VMware, in a way which is much more optimal than using any general purpose PC virtualization software.
+Debian	Download Debian for free or Purchase the complete set of Debian CDs from your local Debian dealer
+Free Linux Programming	Free programming tools for Linux, Windows and other Operating Systems.
+Freespire	Debian-based Linux distribution with support for MP3, DVD, Windows Media, QuickTime, Java, Flash, Real, ATI drivers, nVidia drivers, Adobe Acrobat Reader, proprietary WiFi drivers, fonts, and more.
+Knoppix	You don't have to be a Linux expert to install Knoppix. It installs OK on the majority of computers (including many Laptops). Knoppix starts directly from CD-Rom , but you can also install it on your harddisk. The fact that it runs directly from CD-Rom allows you to try it out before actually installing it.
+You can download Knoppix here.
+Read more in this article on Knoppix.
+Linux Desktops	KDE, stable graphical user-interface included in most Linux distributions.
+Gnome, free desktop environment competing with KDE, included in most Linux distributions.
+ICEWM, is a free window manager, its goal being speed and simplicity.
+XPde, a desktop environment(XPde) and a window manager(XPwm) for Linux. It tries to recreate the Windows XP interface to-the-pixel point. 
+Linux ISO images	LinuxIso.org
+LinuxHelp
+LinuxLookup.com
+Knoppix mirrors
+DemoLinux downloads
+These sites offer free Linux ISO-images for download. An ISO is an exact image of a CD, that can be burned again into a disc to create an exact copy of the original CD.
+See also:
+Some facts about downloading Linux.
+Burning a CD from an ISO image.
+
+Linux Journal	Monthly magazine of the Linux community since 1994.
+Linux News and forums	JustLinux (forums)
+Learn about Linux (forums & news)
+LinuxHotBox.com (news)
+Fresh Meat (news)
+Linux Journal (news)
+Desktop Linux (news)
+Linux Standard Base	Organization devoted to keeping all distributions compatible, so that software which runs on one distribution, also runs on the other. These companies are supporting the initiative: Compaq, Caldera, Coral, Debian, LinuxCare, Mandrake, TurboLinux, Read Hat, Suse, VA Linux, HP, IBM, Intel.
+Linux-Laptop.net	Running Linux on Laptops.
+EasyPeasy	A Linux distribution especially designed for Netbooks.
+Linux.org	Homepage of Linux.
+LinuxArchives.com	Linux software downloads.
+LinuxQuestions.org	Linux support forums where Linux newbies can ask questions and Linux experts can offer advice. Topics include security, installation, networking and much more.
+Mandriva Linux	A Linux distribution that is available for 32bit PC, PowerPC (MAC), and 64 bit processors such as Intel Itanium and AMD Opteron. It includes many graphical administration assistants & wizards that make it intuitive and fun to use while providing all the power and robustness of other Linux systems.
+Migrating to
+desktop Linux	Free eBook in PDF format aimed at assisting those interested in migrating desktop PCs to Linux.
+The goal of this eBook is to provide a technical planning reference for IT organizations large or small that are now considering a migration to Linux-based personal computers.
+Novell SuSE Linux Enterprie	Non-free business Linux editions including support by phone.
+OpenSUSE	Free Linux operating system for Intel-based PC's. One of the best Linux distributions!
+Pardus	Linux-based operating system developed by the Turkey Scientific and Techical Research Assocation. You can use it both in Turkish and English.
+Puppy Linux	Small Linux distribution, only 60mb in size. Can boot from CD, USB disk and run inside Windows or standalone.
+Qubes OS	Uses security domains implemented as lightweight Virtual Machines (or AppVMs). The AppVms are based on Linux. Each AppVM behaves like a local machine. The AppVMs are isolated from each other except for secure copy/paste and file sharing. There are plans to integrate Qubes OS with Intel TXT which unfortunately comes with the extremely scary vPro technology.
+RedHat	Non-free Linux editions for server computers, sold by annual subscription.
+SlackWare	Download Slackware for free or order the CD-Rom set from the Slackware store.
+A special edition of Slackware Linux, called ZipSlack can be installed on the same drive (or partition) as Windows. It just needs a FAT (or FAT32) harddisk with about 100 MB of extra free disk space.
+BigSlack is more complete than ZipSlack, and can also be installed on a FAT (or FAT32) harddisk. BigSlack needs about 850 Mb of extra free disk space.
+Sub300.com	"Anything but Microsoft Retail Store" (USA), offering low-cost Linux computers which are devoid of any Microsoft software (the fact that it has become almost impossible to buy a computer without Windows pre-installed is commonly known as "the Microsoft tax").
+Tiny Linux	Tiny Linux is a small Linux distribution designed especially for old recycled computers.
+Xandros	Non-free Linux distribution which offers Windows-compatibility. See also here.
+ 
+	TreePad X Enterprise
+384 Gigabyte Personal Information Manager and Word Processor.
+Intuitive and versatile, including Website Generator, spellchecker, thesaurus, attachments, search engine, recycle bin, and much more! For Windows and Linux/Wine.
+Click here to get the free evaluation version.
+ 
+Virtual Machines / Emulators
+The software packages listed in this section are able to run one operating system inside another OS, or execute software created for one operating system inside another OS.
+For instance, if you have a MAC, you can run Windows or Linux as a 'guest operating system' inside MacOS. In this case, MacOS is the 'host operating system', and Linux is the 'guest operating system'.
+Alternatively, if you have a PC which has Windows installed, you can use e.g. Linux, FreeBSD or another edition of Windows as guest OS.
+Or when you have Linux installed, you can run e.g. Windows as 'guest operating system'.
+Bochs	Bochs is a highly portable open source IA-32 (x86) PC emulator written in C++, that runs on most popular platforms. It includes emulation of the Intel x86 CPU, common I/O devices, and a custom BIOS. Bochs is capable of running Linux, Windows, DOS and possibly other operating systems as well.
+CP/M Emulator	Freeware application to emulate CP/M-80 ver2.2 on the Macintosh.
+CrossOver	CrossOver enables you to run Windows software on Linux, MAC OS X and Solaris without needing to have a license for Windows (legally). This is an improved version of wine which offers enhanced compatibility with Windows. CrossOver is not freeware like wine though, it costs around 40$ which is not much if you compare it with a Windows license. For wine, please see below.
+DosBox	An open source DOS emulator. It emulates an Intel x86 PC, complete with sound, graphics, mouse, modem, etc., for running many old DOS games that are not compatible with modern Windows PC's.
+DosEMU	Emulates DOS on Linux. Freeware.
+EasyVMX	Free online program to create virtual machines for VMWare Player.
+Emulators and MAC	Emulators for running Windows and other operating systems on MAC OS.
+Guest PC	A low-cost emulator for MAC / Power-PC which allows you to install and run Windows inside your MAC. Intel-based MAC's are not yet supported. Price: $ 69.99.
+Hercules	An open source software implementation of the IBM mainframe System/370 and ESA/390 architectures, in addition to the new IBM 64-bit z/Architecture. Hercules runs on Linux, Windows, Solaris, FreeBSD, and Mac OS X.
+Parallels	Low-cost emulator for Windows and MAC. Supported guest operating systems: Linux, Windows, FreeBSD, OS/2, DOS. Price: $ 79.99.
+Plex86	Very lightweight Virtual Machine (VM) for running Linux/x86. Rather than implement a full and heavyweight VM which can run all guest Operating Systems (OSes), the new approach is designed to run only Linux VMs, making the new plex86 architecture on the order of 10x or 100x more simplistic.
+VirtualBox	Freeware, open-source virtual Machine for Windows, Linux, MAC. It supports a large number of guest operating systems including but not limited to Windows (NT 4.0, 2000, XP, Server 2003, Vista), DOS/Windows 3.x, Linux (2.4 and 2.6), and OpenBSD. We noticed that the installation program of VirtualBox replaced the standard operating system network drivers on our Windows test PC with Virtual box network drivers, which is not a good thing...
+VMWare for MAC	Runs Windows, Linux, FreeBSD or other x86 operating systems side-by-side with Intel-based Mac OS X. Not freeware.
+VMWare Player	Freeware player which runs virtual machines. You cannot create virtual machines using this player, but you can create them using VMWare Workstation or EasyVMX (both listed directly below) .
+Many pre-built freeware virtual machines are available for download here.
+Note from the editor: we found it very difficult to download almost any free appliance due to server-timeout and other connection problems.
+VMWare Workstation	Commercial (non-freeware), high-quality PC emulator. Emulates a PC with Bios and hardware. 
+Virtual platform which enables running more than one operating system simultaneously on one xxx86 computer. Currently one can run DOS, Linux, Solaris, Free BSD, Windows 7, XP, Vista, 200x, NT, 9x, 3.x and all Windows 64 bit editions. Up to four virtual Ethernet cards (having different network addresses) can each be assigned to each running virtual machine.
+Each operating system runs in its own protected sandbox. Each operating system is executed directly by the processor, which gives a fast performance. Three versions available of this VM, one which sits on top of Linux, one which runs on MAC, and one which runs on Windows.
+VMWare is used at Freebyte.com and we can recommend it as solid and stable.
+Wine	Wine allows you to run quite a number of Windows applications on Linux, BSD, Solaris and MAC OS x (without the need to pay for a Windows license - it is fully legal). If you run a Unix-like operating system, then it is likely that Wine is already installed on your system. Otherwise the package manager (built into your Linux distribution) will be able to download/install wine for you.
+Xen	A free virtual machine for IA-32, x86-64, IA-64 and PowerPC. It supports various guest operating systems, including Windows, Linux, Solaris, BSD.
+ 
+Free BSD Operating Systems
+PC-BSD	Free user-friendly desktop-oriented BSD-edition. It is striving towards being one of the easiest OS's to install.
+BSD home page	BSD, like Linux is based on Unix. A variety of resources for users of the various commercial and freely-available bsd Operating Systems, like FreeBSD, OpenBSD, NetBSD.
+FreeBSD	FreeBSD is an advanced free and open-source Operating System for Intel ia32 compatible, DEC Alpha, and PC-98 architectures. It is derived from BSD UNIX, the version of UNIX developed at the University of California, Berkeley. It is developed and maintained by a large team of individuals. Very popular Operating Systems for servers.
+OpenBSD	 OpenBSD is a free, open-source, multi-platform 4.4BSD-based UNIX-like Operating System. OpenBSD supports binary emulation of most programs from SVR4 (Solaris), FreeBSD, Linux, BSDI, SunOS, and HPUX.
+Net BSD	NetBSD is a free, open-source, secure, and highly portable UNIX-like Operating System available for many platforms, from 64-bit AlphaServers and desktop systems to handheld and embedded devices.
+BSD-related news	Daemon News
+ 
+Free Solaris
+Solaris is a Unix-based operating system originally created by Sun (now Oracle). Several open-source versions for Intel and Sparc processors are available. Solaris also runs inside the VMWare emulator (see above).
+BeleniX
+Nexenta
+Open Solaris
+OSUnix
+Schilli
+ 
+Other Unix Operating Systems
+Chrome OS	Google's operating system, open-source, based on Linux.
+GNU Hurd	Open-source (GNU) Replacement for the Unix kernel. The Hurd is a collection of servers that run on the Mach microkernel to implement file systems, network protocols, file access control, and other features that are implemented by the Unix kernel or similar kernels (such as Linux). Currently only available for x86 machines, but will be ported to other platforms. Advantages: free, object-oriented, scalable, compatible.
+Minix	An open-source, small, reliable and self-healing operating system designed for smaller computers, embedded systems, and applications where high reliability and self-repair are important. Minix was designed initially for educational purposes by Andy TanenBaum.
+Plan 9 from Bell Labs	A unix operating system for x86 based PC's developed at Bell Labs starting in the late 1980's and updated ever since. Open source, freeware.
+ 
+Free Educational Operating Systems
+MikeOS	An open-source operating system for x86 PCs, written in assembly language. It is a learning tool to show how simple OSes work, with well-commented code and extensive documentation.
+Features: a text-mode dialog and menu-driven interface , boots from a floppy disk or CD-ROM drive, over 60 system calls for use by third-party programs, pc speaker sound and serial terminal connection, file manager, text editor, image viewer, etc.
+Other projects which are based on MikeOS: TomOS, ScorchOS, BareMetal.
+Nachos	Nachos is an educational operating system simulator used for undergraduate, and potentially graduate, level operating systems courses.
+Runs on DEC MIPS, running Ultrix, SUN SPARCstations, HP PA-RISC, running HP-UX, 386 boxes, running 386BSD UNIX.
+Does not run on Windows, MAC.
+Xinu	Xinu was originally designed as a vehicle for teaching Operating System design concepts and is used by many educational institutions for this purpose.
+Xinu is also well-suited for teaching advanced programming concepts such as Concurrent Processing, I/O, IPC and Client-Server Interaction. Major advantages of Xinu are its (relative) simplicity, and that the source code can be modified as needed.
+ 
+More free Operating Systems
+Amiga.org	Site for Amiga-enthousiasts.
+Aros	AROS is a portable and free and open-source desktop operating system aiming at being compatible with AmigaOS 3.1, while improving on it in many areas.
+Atari.org	Atari.org is a non-commercial service dedicated to the Atari home- and personal-computer users as well as the Classic Video Game enthusiasts all over the world. Also: the most up-to-date news, forums to exchange opinions, hints and support, a comprehensive search engine, web-hosting for Atari computer or video-game related pages as well as subdomains and email-forwarding.
+BRiX	An open-source operating system project featuring: SMP, preemptive multi-threading, virtual memory, a secure multi-user environment and an easy to use graphical interface.
+CapROS	A new operating system that merges some very old ideas about capabilities with some newer ideas about performance and resource management. The result is a small, secure, real-time operating system that provides orthogonal persistence. A continuation of the EROS project.
+Contiki	An open source, multi-tasking operating system for embedded systems and microcontrollers with small amounts of memory. A typical Contiki configuration is 2 kilobytes of RAM and 40 kilobytes of ROM.
+Coyotos	Coyotos is a secure, microkernel-based operating system that builds on the ideas and experiences of the EROS project. Much of the code developed for EROS will migrate directly to Coyotos.
+DexOS	A fast and free operating system for the PC (Intel, AMD, etc.). Everything in this operating system is focused on speed: the architecture, it's avoidance of virtualization, and it is completely written in assembly.
+EROS	'The Extremely Reliable Operating System': s a small, secure, real-time operating system that provides orthogonal persistence. EROS is no longer actively developed.
+Jazmyn	A freeware open-source 32-bit, protected-mode, multitasking, single-user, operating system which runs on i386 CPU's. Written in C++ and Assembly.
+KolibriOS	A small x86 assembler-based operating system. Open source, runs inside Virtual Machines as well.
+Menuet OS	Menuet is a fully 32/64 bit assembly written, graphical RTOS for assembly programming & distributed under GPL with the following features:
+* pre-emptive multitasking, multithreading, ipc
+* graphical UI with 16 M colours up to 1280x1024
+* ide: editor/compiler for applications and kernel
+* kernel and application sources included (GPL)
+* ethernet: tcp/udp/icmp/ip
+* http/mp3 servers, 3D maze
+* free-form, skinnable application windows
+* hard real-time data fetch
+* fits in a single floppy
+Since Menuet fits to a single floppy, you only need one blank 1.44 M diskette to install it. Your hard disks are not affected in any way.
+MonaOS	A free operating system for Intel processors with a small micro kernel (98 Kb). It is neither a POSIX nor a Windows clone and has been written in C++.
+MorphOS	A lightweight media-centric operating system with a just-in-time compiler simulating a Commodore Ax00 system. Freeware.
+Oberon	Oberon is the name of a modern integrated software environment. It is a single-user, multi-tasking system that runs on bare hardware or on top of a host operating system. Oberon is also the name of a programming language in the Pascal/Modula tradition. The Oberon project was launched in 1985 by Niklaus Wirth and Jürg Gutknecht. Although the project was originally targeted towards in-house hardware, the language and system have now been ported to many computer platforms and multiple CPU's.
+Freeware, Open Source.
+openPine OS	Freeware, open-source. Requires only a 300 MHz processor and 32 MB RAM to run. Also runs games such SIM City 2000, Command and Conquer 95 and WORMS 97. No longer actively developed.
+Singularity	An experimental operating system by Microsoft. The source code is available.
+Syllable	A GPL-licensed open source desktop operating system with modest hardware requirements, a 64-bit journaling file system, network support and a GUI.
+Symbian	Well known operating system for mobile phones and PDA's, now open-source
+TAJ	Freeware multi-threaded, multi-user and multi-tasking operating system by Viral Patel (India).
+Visopsys	Freeware, open-source operating system for PC's. It is small, fast, has a GUI, real preemptive multitasking, and virtual memory.
+ 
+Haiku (BeOS)
+Haiku (BeOS) is a very fast, reliable operating system, designed from the ground up for multi-media performance. 
+For example, it boots under 15 seconds. It can run 10 full-screen MPEG videos simultaneously without any problems.
+BeBits.com	Tons of freeware and shareware programs running on Haiku (BeOS).
+Haiku	Open-source and freeware recreation of BeOS.
+ 
+RiscOS
+Cortex A8 port	Risc OS port to various hardware devices, such as BeagleBoard, DevKit8000, IGEPv2.
+Drobe	Archive of Risc OS related articles.
+IYONIX PC	A complete and fast desktop computer with ARM processor running RiscOS.
+More RiscOS computers can be found here.
+Risc OS Open	This site contains the source code of RISC OS and provides assistance to anyone who is interested in developing commercial products using RISC OS.
+RiscOS	Homepage of the RiscOS operating system which was originally created by Acorn Computers in 1988. RiscOS runs on ARM-based processors.
+RiscOS 5 Overview	Unlike earlier versions, RISC OS 5 runs entirely in the ARM's 32-bit mode making it suitable for the latest ARM processors such as Intel XScale, ARM9 and ARM10 based devices.
+RiscOS Products Directory	Large RiscOS directory of software, hardware and other information.
+RiscOS Solo:
+the Green computer	A rugged RISCOS computer, which can run on Solar energy. Intended for use within Third-world countries where its ultra-low-power design enables it to be used far away from sources of mains electricity.
+RiscOS.info	Resources and news related to RiscOS.
+RPCEmu Spoon Edition	Emulates an Acorn RicsPC and A7000 on Windows, Linux, MAC.
+Virtual Acorn	You can also run RiscOS on a regular Windows PC using this Acorn emulator. Cost: around $ 60.
+ 
+OS/2
+eComStation	New version of OS/2 which can run existing OS/2 appliations, as well as Java, Windows 3 and DOS applications. Price: around $ 300.
+ 
+Commercial Operating Systems
+MAC OS	The Operating System for the iMac and other Apple computers. 
+A site with lots of good Mac related links is The Page.
+Plaszma OS	A linux-based operating system for native and web based applications for the ZMS processors and Plaszma platforms.
+QNX	Real-time operating system with UNIX-like functionality.
+SkyOS	SkyOS is an operating system written from scratch for x86 PC's. As required for a modern operating system, it supports features such as multiprocessor support (SMP), 64-bit journaled filesystem, virtual memory, memory protection, multitasking and threading etc. Additionally, SkyOS has a built-in GUI system named SkyGI.
+VAX and Alpha	An interesting initiative is the "OpenVMS and the OpenVMS hobbyist licensing Program". For a few hundreds of dollars you can now own your own (secondhand) VAX or Alpha computer!
+ 
+Java Operating-systems
+Jnode	A free, open-source, Java technology based operating system implemented in Java with a very small assembler nano kernel.
+ 
+Windows
+Although not abundantly fast and user-friendly, Windows is by far the most wide-spread Operating System for Desktop PCs.
+Wine	Wine allows you to run quite a number of Windows applications on Linux, BSD, Solaris and MAC OS x (without the need to pay for a Windows license - it is fully legal). If you run a Unix-like operating system, then it is likely that Wine is already installed on your system. Otherwise the package manager (built into your Linux distribution) will be able to download/install wine for you.
+litePC.com	Products for customizing, optimizing Windows operating systems. By removing or replacing certain Windows components, performance and stability can be improved.
+ReactOS	ReactOS is an Open Source effort to develop a quality operating system that is compatible with Windows NT applications and drivers.
+ 
+	TreePad X Enterprise
+384 Gigabyte Personal Information Manager and Word Processor.
+Intuitive and versatile, including Website Generator, spellchecker, thesaurus, attachments, search engine, recycle bin, and much more! For Windows and Linux/Wine.
+Click here to get the free evaluation version.
+ 
+DOS and DOS clones
+FreeDOS	Freeware DOS clone, Y2K compliant.
+The World of DOS	Dos command index, tips and tricks, history, batch files, autoexec.bat, config.sys, etc.
+MS-DOS 7.10	MS-DOS 7.10 for download.
+MS-DOS 7 from Windows	How to get MsDos 7.0 from Windows 95 or Windows 98
+PTS	Russian MS-DOS clone.
+RDOS	Open source DOS clone, free for non-commercial use.
+Seal	Open source GUI for DOS.
+MS-DOS Commands	Page by ComputerHope listing all MS-DOS commands.
+ 
+Boot Disks and Portable operating systems
+BartPE	Bart's PE Builder creates a bootable/portable version of Windows using a regular Windows DVD (only Windows XP, 2000, 2003 are supported). You can copy this bootable Windows version to a USB disk and start your computer from that USB disk.
+Bootdisk.com	Freely downloadable boot disks for Windows, DOS, Linux. Also: installation guides for Windows, links to drivers and DLLs.
+Linux live CD's	The various Linux live CD's (such as Ubuntu or Fedora) can be used to boot a full working operating system directly from a CD without installing anything.
+ 
+Open source BIOS
+The BIOS is a small piece of software that runs on a more fundamental level than your operating system, firewall or anti-virus program. Since it comes with your computer hardware and is some type of 'permanent' software, the BIOS is also called 'firmware'.
+Believe it or not, proprietary BIOS can pose a hazard for your computer security, just like a some operating systems or software. For instance, a number of computer manufacturers put extra 'functionality' (such as LoJack/Computrace or Intel's VPRO) in the BIOS which in many ways resembles spyware and rootkits. This software seems to be well-intended on the surface, but it could leave the door open for professional hackers, criminals, intelligence agencies and industrial spying. For more information, see this article on LoJack or this article on Intel's VPRO.
+It does not help running a secure operating system or a good firewall if your BIOS is not secure and the BIOS programming code is not open to independent review. Hence the need an open source BIOS.
+Coreboot	Formerly known as LinuxBios. It aims at replacing the proprietary bios which you can find in most computers.
+OpenBIOS	Project dedicated to creating and promoting free and open source firmware implementations.
+ 
+High Performance Computing
+Build your own Tesla
+Personal Supercomputer	Instructions on how to build your own (relatively low-cost) personal supercomputer using a standard PC motherboard and one or more Tesla GPU cards. Each Tesla GPU uses a massively parallel CUDA computing architecture supporting C++, 1 terabyte of memory and a 64-bit virtual address space.
+LinuxHPC.org	Linux high performance computing and cluster server portal: news, articles, references and resources.
+Roy Longbottom's
+PC Benchmerk Collection	A large number of free benchmarks and reliability testing programs for PC's.
+Top500 Supercomputers	News and articles related to supercomputing and the 500 fastest supercomputers in the world.
+WinHPC.org	Windows high performance computing and cluster server portal: news, articles, references and resources.
+ 
+Operating System Development
+OSKit	A framework and set of 34 component libraries intended to facilitate the development of new operating systems, or to enhance and extend existing ones. Open source.
+ExOS library	MIT Exokernel Operating System library.
+OSDev.org	"The place to start for OS developers": newsgroups, message board, links, OSDev ring.
+ 
+Operating System-related sites
+ExtremeTech	Deep technology for enthousiasts and professionals.
+FreeOS.com	Forums, articles and opinions related to free operating systems.
+Operating System
+Documentation Project	History of and information on a large number of operating systems.
+OS News	Daily news on Operating Systems.
+Review of
+Operating Systems	One of the largest lists of Operating Systems, related projects, etc. on the Net.
+ 
+Related Freebyte pages
+Free C++ (and C)
+Programming	Free C++ IDE's, compilers, libraries, tools, resources and tutorials for Linux/Unix, Windows, MAC, etc.
+Free Cross-Platform
+Programming Tools	Free programming tools, interpreters and frameworks following the principle 'create once, compile anywhere' or 'create once, run anywhere'. This means that once you have created your program using one of the tools listed on this page, you can compile or run it on multiple platforms without much (if any) adaptation.
+Free Programming Tools	Free programming tools for Windows, Linux, etc. Free C++, C, Delphi, Basic, Assembler, Cobol, Pascal, Java, SQL, Databases; links to free compilers, databases, interpreters, IDE's, installers, components, libraries, languages, helpfile generators and more.
+Free Anti-Virus Software	Free and non-free anti-virus software, free firewalls, free email protection software, free virus prevention software, tests of anti-virus programs, links to specialized anti-virus sites, information about virus prevention, useful evaluation versions of anti-virus software, etc..
+Free Anti-Spyware	Free utilities to detect and remove spyware.
+Free Office Software	Free office suites, word processors, desktop publishing, text editors, personal databases, diagram software, presentation programs, fonts, document viewers, PDF utilities, thesauri, spellcheckers, document converters, etc.
+Free Computers	Free used and recycled computers, mostly for schools, non-profit organisations and disadvantaged individuals.
+Free File and Disk utilities	Various file and disk utilities.
+Free PSION software	Free software for the small PSION handheld computers.
+Free Software
+created by Freebyte	Free Personal Information Managers, free File and Disk Utilities, free Address Books, free eBook Software and more. All created by Freebyte.com.
+Free System and
+Administrator utilities	Free process viewers, system analysis tools, network monitoring tools, registry tools, task schedulers.
+Free Technical Support	Free technical support for all computer-related issues: Hardware, software, PC, Windows, MAC, PDAs, Linux, drivers, Modems, dll's, virus.
+Free Electronics on-line	Free PCB Design Tools, Circuit Design/Simulation Tools, Free Electronic Circuits, Connector and Pinout reference, Datasheets, Electronics Tutorials, Free Electronics Resources, etc.
+ 
+Also check out our free software
+for Windows and Linux/wine!
+TreePad Lite	Free organizer/information manager
+exe-eBook Creator	Free eBook compiler
+Freebyte Backup	Free backup program
+Fast File Renamer	Free multiple file renaming tool
+Custom Addressbook Lite	Free addressbook
+Disktective	Free Disk-space reporting tool
+HJSplit	Freeware file splitters - multiplatform
+Harddisk Search and Stats	Free search engine for your harddisk
+Freebyte ZIP	Free zip/unzip program
+ 
+Information wanted!
+If you know of any good free and/or interesting Operating Systems,
+which are not listed here, please let us know!
+ 
+About this page
+Last updated on January 01, 2011
+Copyright: Freebyte.com
+Almere, the Netherlands
+
+If you have any comments about this page,
+please mail us here

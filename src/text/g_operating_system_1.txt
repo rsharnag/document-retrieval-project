@@ -1,0 +1,11 @@
+operating system
+The most important program that runs on a computer. Every general-purpose computer must have an operating system to run other programs. Operating systems perform basic tasks, such as recognizing input from the keyboard, sending output to the display screen, keeping track of files and directories on the disk, and controlling peripheral devices such as disk drives and printers.
+For large systems, the operating system has even greater responsibilities and powers. It is like a traffic cop -- it makes sure that different programs and users running at the same time do not interfere with each other. The operating system is also responsible for security, ensuring that unauthorized users do not access the system.
+Operating systems can be classified as follows:
+multi-user : Allows two or more users to run programs at the same time. Some operating systems permit hundreds or even thousands of concurrent users.
+multiprocessing : Supports running a program on more than one CPU.
+multitasking : Allows more than one program to run concurrently.
+multithreading : Allows different parts of a single program to run concurrently.
+real time: Responds to input instantly. General-purpose operating systems, such as DOS and UNIX, are not real-time.
+Operating systems provide a software platform on top of which other programs, called application programs, can run. The application programs must be written to run on top of a particular operating system. Your choice of operating system, therefore, determines to a great extent the applications you can run. For PCs, the most popular operating systems are DOS, OS/2, and Windows, but others are available, such as Linux.
+As a user, you normally interact with the operating system through a set of commands. For example, the DOS operating system contains commands such as COPY and RENAME for copying files and changing the names of files, respectively. The commands are accepted and executed by a part of the operating system called the command processor or command line interpreter. Graphical user interfaces allow you to enter commands by pointing and clicking at objects that appear on the screen.

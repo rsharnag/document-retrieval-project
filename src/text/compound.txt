@@ -1,0 +1,10 @@
+A chemical compound is a pure chemical substance consisting of two or more different chemical elements[1][2][3] that can be separated into simpler substances by chemical reactions.[4] Chemical compounds have a unique and defined chemical structure; they consist of a fixed ratio of atoms[3] that are held together in a defined spatial arrangement by chemical bonds. Chemical compounds can be molecular compounds held together by covalent bonds, salts held together by ionic bonds, intermetallic compounds held together by metallic bonds, or complexes held together by coordinate covalent bonds. Pure chemical elements are not considered chemical compounds, even if they consist of molecules which contain only multiple atoms of a single element (such as H2, S8, etc.),[5] which are called diatomic molecules or polyatomic molecules.
+There are exceptions to the definition above, and large amounts of the solid chemical matter familiar on Earth do not have simple formulas. Certain crystalline compounds are called "non-stoichiometric" because they vary in composition due to either the presence of foreign elements trapped within the crystal structure or a deficit or excess of the constituent elements. Such non-stoichiometric compounds form most of the crust and mantle of the Earth.
+Other compounds regarded as chemically identical may have varying amounts of heavy or light isotopes of the constituent elements, which will make the ratio of elements by mass vary slightly.
+Characteristic properties of compounds:
+1. Elements in a compound are present in a definite proportion
+Example- 2 atoms of hydrogen + 1 atom of oxygen becomes 1 molecule of compound-water.
+2. Compounds have a definite set of properties
+Elements of the compound do not retain their original properties.
+Example: hydrogen (element, which is combustible and non-supporter of combustion) + oxygen (element, which is non-combustible and supporter of combustion) becomes water (compound, which is non-combustible and non-supporter of combustion)
+Valency is the number of hydrogen atoms which can combine with one atom of the element forming a compound.

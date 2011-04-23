@@ -1,0 +1,48 @@
+A symphony is an extended musical composition in Western classical music, scored almost always for orchestra. "Symphony" does not 
+necessarily imply a specific form, though most are composed according to the sonata principle. Many symphonies are tonal works in 
+four movements with the first in sonata form, which is often described by music theorists as the structure of a "classical" symphony, 
+although many symphonies by the acknowledged classical masters of the form, Joseph Haydn, Wolfgang Amadeus Mozart, and Ludwig van 
+Beethoven do not conform to this model.
+
+In the 17th century, for most of the Baroque period, the terms symphony and sinfonia were used for a range of different compositions, 
+including instrumental pieces used in operas, sonatas and concertos—usually part of a larger work. The opera sinfonia, or Italian 
+overture had, by the 18th century, a standard structure of three contrasting movements: fast, slow, fast and dance-like. It is this
+ form that is often considered as the direct forerunner of the orchestral symphony. The terms "overture", "symphony" and "sinfonia"
+ were widely regarded as interchangeable for much of the 18th century.
+
+The "Italian" style of symphony, often used as overture and entr'acte in opera houses, became a standard three movement form: 
+a fast movement, a slow movement, and then another fast movement. Haydn and Mozart, whose early symphonies were in this layout, 
+eventually replaced it with a four-movement layout, through the addition of an additional middle movement (Prout 1895, 249), 
+which became dominant in the latter part of the 18th century and most of the 19th century. This symphonic form was influenced 
+by Germanic practice, and would come to be associated with the "classical style" of Haydn and Mozart. "Normative macro-symphonic 
+form may be defined as the four-movement form, in general, employed in the later symphonies of Haydn and Mozart, and in those of 
+Beethoven" (Jackson 1999, 26).
+
+The normal four-movement form became, then (Jackson 1999, 26; Stein 1979, 106):
+
+    an opening sonata or allegro
+    a slow movement, such as adagio
+    a minuet with trio or "Beethoven four-movement solo sonata": scherzo
+    an allegro, rondo, or sonata
+
+Variations on this layout were common, for instance the order of the middle two movements, or the addition of a slow 
+introduction to the first movement. Older composers such as Haydn and Mozart restricted their use of the four-movement 
+form to orchestral or multi-instrument chamber music such as quartets, though since Beethoven solo sonatas are as often 
+written in four as in three movements (Prout 1895, 249). Tchaikovsky's Third Symphony has a five-movement form through 
+the addition of an "Alla tedesca" 'movement' between the first and the second (Jackson 1999, 26).
+
+Beethoven dramatically expanded the symphony. His Symphony No. 3 (the Eroica), has a scale and emotional range that sets it 
+apart from earlier works. His Symphony No. 5 is arguably the most famous symphony ever written. His Symphony No. 9 takes the 
+unprecedented step (for a symphony) of including parts for vocal soloists and choir in the last movement, making it a choral 
+symphony (however, a minor composer, Daniel Steibelt had written a piano concerto with a choral finale four years earlier, in 1820). 
+Hector Berlioz, who coined the term "choral symphony", built on this concept in his "dramatic symphony" Roméo et Juliette while 
+explaining his intent in the five-paragraph introduction in that work's score (Berlioz 1857, 1). In Beethoven's Pastoral Symphony, 
+a program work, the composer inserted a "storm" section before the final movement; Berlioz's Symphonie fantastique, a work famous for 
+its exceptional orchestration is also a programme work and has both a march and a waltz and five movements instead of the customary four.
+
+At the beginning of the 20th century, Gustav Mahler wrote long, large-scale symphonies. His Eighth Symphony, for example, 
+was composed in 1906 and is nicknamed the "Symphony of a Thousand" because of the forces required to perform it. The 20th 
+century also saw further diversification in the style and content of works that composers labeled symphonies (Anon. 2008). 
+Some composers, including Dmitri Shostakovich, Sergei Rachmaninoff, and Carl Nielsen, continued to write in the traditional 
+four-movement form, while other composers took different approaches: Jean Sibelius' Symphony No. 7, his last, is in one movement, 
+whereas Alan Hovhaness's Symphony No. 9, Saint Vartan—originally op. 80, changed to op. 180—composed in 1949–50, is in twenty-four.

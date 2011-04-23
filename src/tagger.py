@@ -40,9 +40,10 @@ class Tagger:
         for tag in tags:
             if tag[1] in self._noun_type:
                 stripped_tag = self.remove_puncs(tag[0])
-                singular = p.singular_noun(stripped_tag)
-                if(singular != False):
-                    stripped_tag = singular
+                if(stripped_tag.isalpha()):
+                    singular = p.singular_noun(stripped_tag)
+                    if(singular != False):
+                        stripped_tag = singular
                 self.nouns.append(stripped_tag)
             elif tag[1] in self._adjective_type:
                 stripped_tag = self.remove_puncs(tag[0])

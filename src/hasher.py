@@ -77,6 +77,8 @@ class Hasher:
             f4=open(path+'file_id_dump','r')
         except IOError:
             print "Dump file not found, creating new dump"
+            create_dump()
+            read_dump()
             return
         self.hash_table = pickle.load(f1)
         f1.close()
@@ -125,4 +127,5 @@ class Hasher:
 if __name__ == "__main__":
     hash = Hasher()
     hash.create_dump()
+    print "Hash complete"
     #print hash.hash_table

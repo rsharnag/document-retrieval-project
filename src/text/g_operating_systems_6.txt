@@ -1,0 +1,44 @@
+Review of Operating SystemsThis web site is available in english, german and french. You can find much informations about the history of operating systems and historical facts since the first release of this website in 2001. This project is still work in progress, the articles grows with every feedback and continuous improvement by the main author. Many screenshots and version informations complete the objective reviews. 
+
+Please contact me if you miss an operating system or like to support this project in another way.
+
+
+Mac OS 9 Apple's operating system for PowerPC from 1999. More about Mac OS
+
+
+
+Android OS Special operating system with linux kernel for smartphones, developed by google. On the market since October 2008. More about Android OS
+
+
+
+Debian GNU/Linux Non-commercial linux distribution, initiated by Ian Murdock on 16th August 1993. More about Debian
+
+
+
+eComStation Licensed OS/2 operating system, developed by Serenity Systems since the year 2000. More about eComStation
+
+
+
+Haiku Started in August 18th, 2001 as OpenBeOS, this is the official open source successor of BeOS. More about Haiku
+
+
+
+Windows 7 Successor of Windows Vista re- leased in October 2009. More about Windows 7
+
+
+
+Windows ME Successor of Windows 98 Second Edition released on September 14th, 2000. More about Windows ME
+
+
+
+Zeta Commercial BeOS distribution, developed by yellowTAB. Development and sale stopped on 5th April 2007. More about Zeta
+
+
+
+QNX Real time operating system, compatible to POSIX. With integrated development environ- ment. More about QNX
+
+
+
+Windows Vista Published by Microsoft in July 2005. Introducing the new Aero interface. More about Windows Vista
+
+

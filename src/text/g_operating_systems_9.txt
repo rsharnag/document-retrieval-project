@@ -1,0 +1,6 @@
+What is an Operating System?
+ 
+Watch the video (1:46). Need help?
+An operating system is the most important software that runs on a computer. You might be thinking, “OK, but what is software?” Software is any set of instructions that performs some task on a computer. The operating system performs many essential tasks for your computer. 
+
+It controls the memory needed for computer processes, manages disk space, controls peripheral devices, and allows you to communicate with the computer without knowing exactly how a computer works. Without an operating system, a computer is useless.

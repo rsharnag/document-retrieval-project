@@ -47,7 +47,7 @@ def generalisation(originalWordList):
         generalisedWordList.extend(l)
     generalisedWordList.extend(currentWordList)
     generalisedWordList=list(set(generalisedWordList))
-    open("output_generalizedWL","w").write(str(generalisedWordList))
+    open("output_generalizedWL","a").write(str(generalisedWordList))
     return generalisedWordList
 
 if __name__ == "__main__":

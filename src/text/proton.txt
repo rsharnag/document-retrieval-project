@@ -1,0 +1,7 @@
+The proton is a subatomic particle with an electric charge of +1 elementary charge. One or more protons are present in the nucleus of each atom, along with neutrons.
+The proton is also stable by itself. Free protons are emitted in some rare types of radioactive decay, but they soon pick up an electron and become neutral hydrogen, which then soon combines with other atoms. Free protons may exist in plasmas or in cosmic rays in vacuum.
+The proton particle is composed of three fundamental particles: two up quarks and one down quark. It is about 1.6–1.7 Fm in diameter.
+Protons are spin-½ fermions and are composed of three quarks, making them baryons (a sub-type of hadrons). The two up quarks and one down quark of the proton are held together by the strong force, mediated by gluons. The proton has an approximately exponentially decaying positive charge distribution with a mean square radius of about 0.8 fm.
+Protons and neutrons are both nucleons, which may be bound by the nuclear force into atomic nuclei. The nucleus of the most common isotope of the hydrogen atom is a lone proton. The nuclei of the heavy hydrogen isotopes deuterium and tritium contain one proton bound to one and two neutrons, respectively. All other types of atoms are composed of two or more protons and various numbers of neutrons. The number of protons in the nucleus determines the chemical properties of the atom and thus which chemical element is represented; it is the number of both neutrons and protons in a nuclide which determine the particular isotope of an element.
+
+
