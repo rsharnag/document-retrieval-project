@@ -10,5 +10,5 @@ class ReadText:
         except IOError:
             print "File not found"
             exit(1)
-        self.readAll=inputFile.read()
+        self.readAll=inputFile.read().lower()
         inputFile.close()

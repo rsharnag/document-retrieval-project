@@ -1,0 +1,13 @@
+operating system (OS)
+What is an operating system? An operating system (sometimes abbreviated as "OS") is the program that, after being initially loaded into the computer by a boot program, manages all the other programs in a computer. The other programs are called applications or application programs. The application programs make use of the operating system by making requests for services through a defined application program interface (API). In addition, users can interact directly with the operating system through a user interface such as a command language or a graphical user interface.
+An operating system performs these services for applications:
+
+In a multitasking operating system where multiple programs can be running at the same time, the operating system determines which applications should run in what order and how much time should be allowed for each application before giving another application a turn.
+It manages the sharing of internal memory among multiple applications.
+It handles input and output to and from attached hardware devices, such as hard disks, printers, and dial-up ports.
+It sends messages to each application or interactive user (or to a system operator) about the status of operation and any errors that may have occurred.
+It can offload the management of what are called batch jobs (for example, printing) so that the initiating application is freed from this work.
+On computers that can provide parallel processing, an operating system can manage how to divide the program so that it runs on more than one processor at a time.
+All major computer platforms (hardware and software) require and sometimes include an operating system. Linux, Windows 2000, VMS, OS/400, AIX, and z/OS are all examples of operating systems.
+
+

@@ -1,0 +1,25 @@
+Introduction:
+
+The following lessons introduce the topic of operating systems in computers by discussing the main function of operating systems and investigating several key parts of operating systems such as memory and file managers. Each lesson includes a set of review questions which test the important concepts from the lesson and provide practice problems. After reading each lesson, you should work the review questions before proceeding to the next lesson. Use the navigation bar at the top of this page to view the lessons and access the review questions. Each lesson page has a link on the navigation bar which will take you to the review questions for that lesson. To begin your study, click  link at the top of this page.
+
+
+Lessons:
+
+Introduction to Operating Systems
+Resources
+Processes
+Synchronization
+Deadlock
+Memory Allocation
+Virtual Memory
+File Management
+Summary
+
+
+Learning objectives:
+
+Understand the purpose of the operating system
+Distinguish between a resource, a program, and a process
+Recognize critical resources and explain the behavior of semaphores
+Describe various memory page replacement algorithms
+Describe how files are stored in secondary storage

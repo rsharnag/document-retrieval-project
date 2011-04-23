@@ -1,0 +1,151 @@
+Algorithms | Compilers | Computational Geometry | Computer Architecture
+Computer Science | Engineering/Technology | Java |  Parallel Computing      
+
+ 
+ Operating Systems Lecture Notes
+
+Introduction
+History of Operating Systems
+Operating Systems Structure
+System Component
+Operating System Services
+System Calls and System Programs
+Layered Approach System Design
+Mechanism and Policy
+Process
+Definition of Process  
+Process State
+Process Operations
+Process Control Block
+Threads
+Solaris-2 Operating Systems
+CPU/Process Scheduling
+Schedule Algorithm
+FCFS Scheduling
+Round Robin Scheduling
+SJF Scheduling
+SRT Scheduling
+Priority Scheduling
+Multilevel Queue Scheduling
+Multilevel Feedback Queue Scheduling
+Interprocess Communication
+Critical Section
+Mutual Exclusion
+Achieving Mutual Exclusion
+Semaphores
+Deadlock
+Necessary and Sufficient Deadlock Conditions
+Dealing with Deadlock Problem
+Deadlock Prevention
+Deadlock Avoidance
+Deadlock Detection
+Absolutely Important UNIX Commands
+References
+
+
+ Operating Systems Review -- by Shikha Ghosh Gottfried.
+ IEEE Distributed Systems Online
+ Problem Reporting and Tracking System at CS Computer Systems
+ 
+
+ 
+
+ Links
+
+Cryptology ePrint Archive -- provides rapid access to recent research in cryptology. Papers have been placed here by the authors and did not undergo any refereeing process other than verifying that the work seems to be within the scope of cryptology and meets some minimal acceptance criteria
+How Operating Systems Work
+Operating System Developers homepage
+Overview of Projects on Distributed Operating Systems -- at Department of CS, U. of Ulm.
+Review of Operating Systems
+Virtual Network Computing - VNC -- Access Personal Computer remotely
+Win2VNC -- a dual-screen hack for Windows. This program will let you use two screens on two different computers as if they were connected to the same computer. It even works between different operating systems.
+ Books & Tutorials
+
+Cryptography and Network Security by William Stallings | Resources
+Multithreaded Programming with ThreadMentor: A Tutorial by C.-K. Shene
+Operating System Design & Implementation - Tutorial  -- by Mohan Raj Dhanagopal.
+Operating System Concepts Sixth Edition by Abraham Silberschatz  , Peter Baer Galvin  and Greg Gagne
+Operating Systems, Fourth Edition by William Stallings | Resources
+ Nachos
+
+Guide to Nachos 5.0j by Dan Hettena & Rick Cox -- Nachos and Java.
+Nachos -- General Nachos documentation at U. of Washington.
+Nachos User-Level Remote Debugging With GDB -- at U. of Kansas.
+Reading Nachos Source Code -- by Michael O'Donnell, University of Chicago
+Road Map Through Nachos -- by Thomas Narten at Duke U.
+    High-level overview of the source code which can be used as companion to overcome the initial learning curve encountered when learning and using the system.
+Salsa -- An Operating Systems Tutorial -- by Archna Kalra at U.Mass Amherst.
+ Programming
+
+cpp-home -- wide range of C++ tutorials and codes.
+cprogramming.com
+C-lesson by Christopher Sawtell -- This archive contains a complete course to learn the 'C' computer language itself.
+LEARN C/C++ TODAY -- Annotated collection of tutorials on both C and C++.
+ 
+
+ Viewers
+
+Adobe (PDF)
+Java 3D Viewer
+GhostView (PS)
+Microsoft Office Online File Converters & Viewers -- with help of these programs one can share Microsoft Office files with people who have different versions of Office programs, or even with people who don't have Office installed.
+Online viewer for PDF, PostScript and Word
+ 
+
+ Unix Resources
+
+Frequently Used UNIX Commands
+Information on basic UNIX commands
+Locally-created Unix Man Pages for selected commands at KSU.
+UNIX (Digital Documentation Library)
+Unix's FAQ List
+UNIX Glossary 
+Unix Guru Universe -- official page for UNIX System Administrators
+Unix Help for Users
+UNIX LINUX & Variants
+UNIX Pocket Reference List
+Unix Reference Desk
+Unix Services
+ 
+
+ Linux Resources
+
+Learning Linux.com  -- Information and support for Linux users and those interested in learning the Linux operating system
+Linux Applications & Utilities -- open source, commercial, freeware & shareware tools & lot more.
+Linux Knowledge base and Tutorial
+Linux Guide  -- a  glossary of Linux terms and definitions with a sophisticated search engine
+Linux Headquaters
+LinuxMall.com
+Linux Online -- great introductory site
+Linux & UNIX Resources 
+Scientific Applications on Linux (SAL) -- collection of information and links to software that will be of interest to scientists and engineers.
+Setting up Mail Services in Linux
+ 
+
+ Redhat
+
+Installing the Server-mode of @ Mail under RedHat ES4
+Learnthat.com -- Tutorials, Online Courses, and Help.
+Netikus -- downloadable guides including mail server installation.
+Red Hat
+Red Hat Enterprise Linux ES 4 Release Notes -- Installation-related and Package-specific notes.
+ 
+
+ Online Books On UNIX
+
+Unix Unleashed
+
+ Related Resources
+
+Computer Systems at KSU
+Installing TeraTerm Pro  --  A freeware terminal emulator/telnet client for Windows.
+Network File System Overview -- The Network File System (NFS) is a distributed file system that allows users to access files and directories located on remote computers and treat those files and directories as if they were local.
+Domain name Lookup
+ Gnome
+
+Gnome -- official site
+ 
+ 
+ 
+
+There is no place like  Home

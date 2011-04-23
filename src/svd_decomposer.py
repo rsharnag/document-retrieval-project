@@ -21,6 +21,8 @@ class svdDecompose:
         #word_index_per_tag contains word-tag pair for each index
         self.word_index_per_tag = []
         self.hash = hash_table
+        self.U=[]
+        self.V=[]
 
     def tfidf(self,wordlist):
         """calculates term frequency-inverse document frequency"""
@@ -55,10 +57,35 @@ class svdDecompose:
 		print "word = ",self.word_index_per_tag[i][0],", tag = ",self.word_index_per_tag[i][1],", frequency = ",self.freq_table[i]"""
 
     def decompose(self):
-        self.U,self.S,self.V = numpy.linalg.svd(self.freq_table)
-        open("output_SVD","w").write(str(self.U) + "\n" + str(self.V))
+        u,s,v = numpy.linalg.svd(self.freq_table)
+        #print u
+        #print v
+        temp=[]
+        for i in range(0,len(u)):
+            for j in range(0,len(u[0])):
+                temp.append(float(u[i][j]))
+            self.U.append(temp)
+            temp=[]
+        for i in range(0,len(v)):
+            for j in range(0,len(v[0])):
+                temp.append(float(v[i][j]))
+            self.V.append(temp)
+            temp=[]
+        #print self.U
+        #print self.V
+        i = 0
+        if(len(self.U[0])<len(self.V[0])):
+            temp = (len(self.V[0])-len(self.U[0]))*[0.0]
+            for i in range(0,len(self.U)):
+                self.U[i].extend(temp)
+        elif(len(self.U[0])>len(self.V[0])):
+            i = (len(self.U[0])-len(self.V[0]))
+            while(i > 0):
+                self.V.append(len(self.V[0])*[0.0])
+                i -= 1
+        open("output_SVD","w").write(str(self.V)) #+ "\n" + str(self.V))
 
-    def find_neighbours(self):
+    def find_neighbours(self, num_of_results=5):
         """Build a k-D Tree and find the nearnest neighbours of the given query"""
         data = []
         point_list = []
@@ -86,18 +113,20 @@ class svdDecompose:
             i += 1
         i = 0
         while(i < len(point_list)):
-            nearest = tree.query(point_list[i], t=1) # find nearest 10 points to the current point
+            nearest = tree.query(point_list[i], t=num_of_results) # find nearest t points to the current point
             j = 0
             while(j < len(nearest)):
                 t = DataToDoc_map[tuple(nearest[j])]
                 if t in count:
-                    count[t] += 1
+                    count[t] += float((num_of_results-j))/float(num_of_results)
                 else:
-                    count[t] = 1
+                    count[t] = float((num_of_results-j))/float(num_of_results)
                 j += 1
             i += 1
         FinalResult = sorted(count, key=count.__getitem__, reverse=True)
-        return FinalResult[:9]
+        for i in count.keys():
+            open("output_Count","a").write(str(i)+" "+str(count[i])+"\n")
+        return FinalResult[:num_of_results]
     
 if __name__ == "__main__":
     result = []
