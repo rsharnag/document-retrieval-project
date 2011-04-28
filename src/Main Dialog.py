@@ -17,7 +17,24 @@ from threading import Thread
 # begin wxGlade: extracode
 # end wxGlade
 
-
+myEVT_COUNT = wx.NewEventType()
+myEVT_UPDATE = wx.NewEventType()
+EVT_COUNT = wx.PyEventBinder(myEVT_COUNT, 1)
+EVT_UPDATE = wx.PyEventBinder(myEVT_UPDATE, 1)
+class CountEvent(wx.PyCommandEvent):
+    def __init__(self, etype, eid, value=None):
+        wx.PyCommandEvent.__init__(self, etype, eid)
+        self._value = value
+        
+    def GetValue(self):
+        return self._value
+class updateEvent(wx.PyCommandEvent):
+    def __init__(self, etype, eid, value=None):
+        wx.PyCommandEvent.__init__(self, etype, eid)
+        self._value = value
+        
+    def GetValue(self):
+        return self._value
 
 class DocProcessorDialog(wx.Frame):
     ViewFile=None
@@ -51,12 +68,11 @@ class DocProcessorDialog(wx.Frame):
         self.Bind(wx.EVT_RADIOBOX, self.onTypeChange, self.type_radio_box)
         self.Bind(wx.EVT_BUTTON, self.onRefreshTagger, self.Tagger_Refresh)
         self.Bind(wx.EVT_BUTTON, self.onRefreshGeneralisation, self.generalisation_refresh)
+        self.Bind(EVT_COUNT, self.onStatusChange)
+        self.Bind(EVT_UPDATE, self.updateResults)
         # end wxGlade
         #Extra Code
-        self.hash=Hasher()
-        self.hash.read_dump()
-        self.doc_processor = DocProcessor(self.hash)
-        self.threadlock = thread.allocate_lock()
+        
         
     def __set_properties(self):
         # begin wxGlade: DocProcessorDialog.__set_properties
@@ -134,23 +150,26 @@ class DocProcessorDialog(wx.Frame):
         if text =="" :
             event.Skip()
             return        
-        files=open("taggerText", "w")
-        files.write(text)
-        files.close()
         num_of_results=self.num_result_ctrl.GetValue()
-        t=(int(num_of_results), 0)
         self.search_result_list_box.Clear()
-        self.statusBar.SetStatusText("processing")
-        t=Thread(None, self.processClick, None, t)
-        t.start()
-        t.join()
-        self.statusBar.SetStatusText("done")
-        for i in self.result:
-            self.search_result_list_box.Append(self.hash.map_count[i])
-    
+        worker = updateThread(self, text, num_of_results)
+        worker.start()
+    def updateResults(self, evt):
+        result=evt.GetValue()
+        self.search_result_list_box.Clear()
+        for i in result:
+             self.search_result_list_box.Append(unicode(i))
+
+    def onStatusChange(self, evt):
+        msg=evt.GetValue()
+        self.statusBar.SetStatusText(unicode(msg))
+        
     def processClick(self,num_of_results, u):
         self.threadlock.acquire()
         self.result=self.doc_processor.process("taggerText", int(num_of_results))
+        self.statusBar.SetStatusText("done")
+        for i in self.result:
+            self.search_result_list_box.Append(self.hash.map_count[i])
         self.threadlock.release()
         #thread.interrupt_main()
         
@@ -168,14 +187,31 @@ class DocProcessorDialog(wx.Frame):
         
 
 # end of class DocProcessorDialog
-def processClick(self):
-        self.statusBar.SetStatusText("processing")
-        result=self.doc_processor.process("taggerText", int(num_of_results))
-        self.statusBar.SetStatusText("done")
-        self.search_result_list_box.Clear()
-        for i in result:
-             self.search_result_list_box.Append(self.hash.map_count[i])
-
+class updateThread(Thread):
+    def __init__(self, parent, queryText, num_of_results):
+        Thread.__init__(self)
+        self._queryText=queryText
+        self._num_of_results = int(num_of_results)
+        self._parent=parent
+        self._hash=Hasher()
+        self._hash.read_dump()
+        self._doc_processor = DocProcessor(self._hash)
+        self._threadlock = thread.allocate_lock()
+    def run(self):
+        files=open("taggerText", "w")
+        files.write(self._queryText)
+        files.close()
+        evt1=CountEvent(myEVT_COUNT, -1, "processing")
+        wx.PostEvent(self._parent, evt1)
+        results=self._doc_processor.process("taggerText", int(self._num_of_results))
+        result=[]
+        for i in results:
+            result.append(self._hash.map_count[i])
+        evt2=updateEvent(myEVT_UPDATE, -1, result)
+        wx.PostEvent(self._parent, evt2)
+        evt1=CountEvent(myEVT_COUNT, -1, "done")
+        wx.PostEvent(self._parent, evt1)
+        
 class MyApp(wx.App):
     def OnInit(self):
         wx.InitAllImageHandlers()
