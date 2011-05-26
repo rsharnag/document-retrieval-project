@@ -35,7 +35,7 @@ class FileView(wx.Dialog):
         self.Centre()
         # end wxGlade
     def setText(self, filename):
-        filename=filename.encode("ascii")  
+        filename=filename.encode('ascii')  
         try:
             text=open(filename,"r").read()
             self.fileView_ctrl.SetValue(text)
