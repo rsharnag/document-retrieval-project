@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python
 '''
 Created on 11-Apr-2011
@@ -14,6 +15,11 @@ from hasher import Hasher
 from fileView1 import FileView
 import thread
 from threading import Thread
+try:
+    import cPickle as pickle
+except ImportError:
+    import pickle
+import os
 # begin wxGlade: extracode
 # end wxGlade
 
@@ -88,7 +94,7 @@ class DocProcessorDialog(wx.Frame):
         self.tagger_result_grid.SetColLabelValue(0, "Words")
         self.tagger_result_grid.SetColSize(0, 400)
         self.type_radio_box.SetSelection(0)
-        self.generalisation_grid.CreateGrid(10, 1)
+        self.generalisation_grid.CreateGrid(100, 1)
         self.generalisation_grid.SetColLabelValue(0, "Words Added")
         self.generalisation_grid.SetColSize(0, 600)
         # end wxGlade
@@ -156,34 +162,70 @@ class DocProcessorDialog(wx.Frame):
         worker.start()
     def updateResults(self, evt):
         result=evt.GetValue()
+        #Updating result box
         self.search_result_list_box.Clear()
         for i in result:
              self.search_result_list_box.Append(unicode(i))
+        #updating Generalized Wordlist
+        file=open(os.curdir+"/dumps/GW_dump", "r")
+        self.gwList=pickle.load(file)
+        file.close()
+        i=0
+        self.generalisation_grid.ClearGrid()
+        if(len(self.gwList)>self.generalisation_grid.GetNumberRows()):
+            self.generalisation_grid.AppendRows(len(self.gwList)-100)
+        for word in self.gwList:
+            self.generalisation_grid.SetCellValue(i, 0, unicode(word))
+            i+=1
+        #Updating Tagger Result
+        file=open(os.curdir+"/dumps/tagger_dump", "r")
+        self.taggerWords=pickle.load(file)
+        file.close()
+        i=0
+        self.tagger_result_grid.ClearGrid()
+        if(len(self.taggerWords[self.type_radio_box.GetSelection()])>self.tagger_result_grid.GetNumberRows()):
+            self.tagger_result_grid.AppendRows(len(self.taggerWords[self.type_radio_box.GetSelection()])-self.tagger_result_grid.GetNumberRows())
+        for word in self.taggerWords[self.type_radio_box.GetSelection()]:
+            if(word.isalpha() and word!=''):
+                self.tagger_result_grid.SetCellValue(i, 0, unicode(word))
+            i+=1
 
     def onStatusChange(self, evt):
         msg=evt.GetValue()
         self.statusBar.SetStatusText(unicode(msg))
         
-    def processClick(self,num_of_results, u):
-        self.threadlock.acquire()
-        self.result=self.doc_processor.process("taggerText", int(num_of_results))
-        self.statusBar.SetStatusText("done")
-        for i in self.result:
-            self.search_result_list_box.Append(self.hash.map_count[i])
-        self.threadlock.release()
-        #thread.interrupt_main()
         
     def onTypeChange(self, event): # wxGlade: DocProcessorDialog.<event_handler>
-        print "Event handler `onTypeChange' not implemented!"
-        event.Skip()
+        self.tagger_result_grid.ClearGrid()
+        i=0
+        for word in self.taggerWords[self.type_radio_box.GetSelection()]:
+            if(word.isalpha() and word!=''):
+                self.tagger_result_grid.SetCellValue(i, 0, unicode(word))
+            i+=1
 
     def onRefreshTagger(self, event): # wxGlade: DocProcessorDialog.<event_handler>
-        print "Event handler `onRefreshTagger' not implemented!"
-        event.Skip()
-
+        file=open(os.curdir+"/dumps/tagger_dump", "r")
+        self.taggerWords=pickle.load(file)
+        file.close()
+        i=0
+        self.tagger_result_grid.ClearGrid()
+        if(len(self.taggerWords[self.type_radio_box.GetSelection()])>self.tagger_result_grid.GetNumberRows()):
+            self.tagger_result_grid.AppendRows(len(self.taggerWords[self.type_radio_box.GetSelection()])-self.tagger_result_grid.GetNumberRows())
+        for word in self.taggerWords[self.type_radio_box.GetSelection()]:
+            if(word.isalpha() and word!=''):
+                self.tagger_result_grid.SetCellValue(i, 0, unicode(word))
+            i+=1
     def onRefreshGeneralisation(self, event): # wxGlade: DocProcessorDialog.<event_handler>
-        print "Event handler `onRefreshGeneralisation' not implemented!"
-        event.Skip()
+        file=open(os.curdir+"/dumps/GW_dump", "r")
+        self.gwList=pickle.load(file)
+        file.close()
+        i=0
+        self.generalisation_grid.ClearGrid()
+        if(len(self.gwList)>self.generalisation_grid.GetNumberRows()):
+            self.generalisation_grid.AppendRows(len(self.gwList)-100)
+        for word in self.gwList:
+            self.generalisation_grid.SetCellValue(i, 0, unicode(word))
+            i+=1
         
 
 # end of class DocProcessorDialog
@@ -196,7 +238,7 @@ class updateThread(Thread):
         self._hash=Hasher()
         self._hash.read_dump()
         self._doc_processor = DocProcessor(self._hash)
-        self._threadlock = thread.allocate_lock()
+
     def run(self):
         files=open("taggerText", "w")
         files.write(self._queryText)
